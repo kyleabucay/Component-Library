@@ -48,12 +48,18 @@
 
 .tooltip, 
 .tooltip-content,
-.tooltip-content h2,
 .tooltip-content p,
 .tooltip button,
 .tooltip-arrow,
 .icon-transition {
   transition: all 0.3s ease;
+}
+
+.tooltip-content h2 {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .tooltip-content {
