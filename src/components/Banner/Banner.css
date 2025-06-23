@@ -1,0 +1,42 @@
+/* CONGRATULATIONS BANNER */
+.content.success {
+  color: #065F46;
+  font-weight: 600;
+}
+
+.content.success p {
+  color: #047857;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+/* WARNING BANNER AND DANGER BANNER */
+.content.warning, .content.error {
+  color: #92400E;
+}
+
+.content.warning p, .content.error p {
+  color: #B45309;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+.content.warning {
+  font-weight: 600;
+}
+
+.content.error {
+  font-weight: 700;
+}
+
+/* NEUTRAL BANNER */
+.content.neutral {
+  color: #1C51B9;
+  font-weight: 600;
+}
+
+.content.neutral p {
+  color: #1E40AF;
+  font-weight: 400;
+  margin-bottom: 0;
+}

@@ -1,0 +1,63 @@
+:root {
+    --gray: #F3F4F6;
+    --red: #FEE2E2;
+    --yellow: #FEF3C7;
+    --green: #D1FAE5;
+    --blue: #DBEAFE;
+    --indigo: #E0E7FF;
+    --purple: #EDE9FE;
+    --pink: #FCE7F3;
+}
+
+button {
+    font-size: 1.5rem;
+
+}
+
+button.square {
+    border-radius: 8px;
+}
+
+button.pill {
+    border-radius: 9999px;
+}
+
+button.gray {
+    background-color: var(--gray);
+    color: #1F2937
+}
+
+button.red {
+    background-color: var(--red);
+    color: #991B1B
+}
+
+button.yellow {
+    background-color: var(--yellow);
+    color: #92400E
+}
+
+button.green {
+    background-color: var(--green);
+    color: #065F46
+}
+
+button.blue {
+    background-color: var(--blue);
+    color: #1E40AF
+}
+
+button.indigo {
+    background-color: var(--indigo);
+    color: #3730A3
+}
+
+button.purple {
+    background-color: var(--purple);
+    color: #5B21B6
+}
+
+button.pink {
+    background-color: var(--pink);
+    color: #9D174D
+}

@@ -1,0 +1,211 @@
+:root {
+  /* Default Colors */
+  --light-mode-bg: #FFFFFF;
+  --light-mode-text: #111827;
+  --light-mode-muted: #6B7280;
+
+  /* Default Colors (Dark Mode) */
+  --dark-mode-bg: #262626;
+  --dark-mode-text: #F9FAFB;
+  --dark-mode-muted: #C7C7C7;
+
+  /* Blue Colors (Light and Dark Mode) */
+  --blue-light-mode: #E0E7FF;
+  --blue-light-mode-text: #1C51B9;
+  --blue-light-mode-title: #1E40AF;
+  --blue-dark-mode: #1E40AF;
+  --blue-dark-mode-text: #E8EDFF;
+
+  /* Magenta Colors (Light and Dark Mode) */
+  --magenta-light-mode: #FFF3FC;
+  --magenta-light-mode-text: #C7369E;
+  --magenta-light-mode-title: #A9229B;
+  --magenta-dark-mode: #A9229B;
+  --magenta-dark-mode-text: #FFE9FD;
+
+  /* Green Colors (Light and Dark Mode) */
+  --green-light-mode: #E7FFF3;
+  --green-light-mode-text: #3C8C4E;
+  --green-light-mode-title: #137A2A;
+  --green-dark-mode: #47AA5D;
+  --green-dark-mode-text: #E3FFE9;
+}
+
+/* DEFAULT MODE */
+.tooltip {
+  display: flex;
+  align-items: flex-start;
+  padding: 1rem 1rem 0.5rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 25rem;
+  background-color: var(--light-mode-bg);
+  color: var(--light-mode-text);
+  position: relative;
+  gap: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.tooltip, 
+.tooltip-content,
+.tooltip-content h2,
+.tooltip-content p,
+.tooltip button,
+.tooltip-arrow,
+.icon-transition {
+  transition: all 0.3s ease;
+}
+
+.tooltip-content {
+  z-index: 2;
+  flex: 1;
+}
+
+.tooltip-content h2 {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.tooltip-content p {
+  margin-top: 5px;
+  font-size: 0.95rem;
+  color: var(--light-mode-muted);
+}
+
+.tooltip button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--light-mode-muted);
+  font-size: 1.4rem;
+  padding: 0;
+}
+
+.tooltip-arrow {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: var(--light-mode-bg);
+  transform: translateX(-50%) rotate(45deg);
+  bottom: -10px;
+  left: 25%;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+/* DARK MODE */
+.tooltip.dark {
+  background-color: var(--dark-mode-bg);
+  color: var(--dark-mode-text);
+}
+
+.tooltip.dark .tooltip-content p {
+  color: var(--dark-mode-muted);
+}
+
+.tooltip.dark button {
+  color: var(--dark-mode-muted);
+}
+
+.tooltip.dark .tooltip-arrow {
+  background-color: var(--dark-mode-bg);
+}
+
+
+
+/* BLUE VARIANT */
+.tooltip.blue {
+  background-color: var(--blue-light-mode);
+  color: var(--blue-light-mode-title);
+}
+
+.tooltip.blue .tooltip-content p {
+  color: var(--blue-light-mode-text);
+}
+
+.tooltip.blue .tooltip-arrow {
+  background-color: var(--blue-light-mode);
+}
+
+/* BLUE DARK MODE */
+.tooltip.dark.blue {
+  background-color: var(--blue-dark-mode);
+  color: var(--light-mode-bg);
+}
+
+.tooltip.dark.blue .tooltip-content p {
+  color: var(--blue-dark-mode-text);
+}
+
+.tooltip.dark.blue .tooltip-arrow {
+  background-color: var(--blue-dark-mode);
+}
+
+
+
+/* MAGENTA VARIANT */
+.tooltip.magenta {
+  background-color: var(--magenta-light-mode);
+  color: var(--magenta-light-mode-title)
+}
+
+.tooltip.magenta .tooltip-content p {
+  color: var(--magenta-light-mode-text);
+}
+
+.tooltip.magenta .tooltip-arrow {
+  background-color: var(--magenta-light-mode);
+}
+
+/* MAGENTA DARK MODE */
+.tooltip.dark.magenta {
+  background-color: var(--magenta-dark-mode);
+  color: var(--magenta-dark-mode-text);
+}
+
+.tooltip.dark.magenta .tooltip-content p {
+  color: var(--magenta-dark-mode-text);
+}
+  
+.tooltip.dark.magenta .tooltip-arrow {
+  background-color: var(--magenta-dark-mode);
+}
+
+
+
+/* GREEN VARIANT */
+.tooltip.green {
+  background-color: var(--green-light-mode);
+  color: var(--green-light-mode-title);
+}
+
+.tooltip.green .tooltip-content p {
+  color: var(--green-light-mode-text);
+}
+
+.tooltip.green .tooltip-arrow {
+  background-color: var(--green-light-mode);
+}
+
+/* GREEN DARK MODE */
+.tooltip.dark.green {
+  background-color: var(--green-dark-mode);
+  color: var(--light-mode-bg);
+}
+
+.tooltip.dark.green .tooltip-content p {
+  color: var(--green-dark-mode-text);
+}
+
+.tooltip.dark.green .tooltip-arrow {
+  background-color: var(--green-dark-mode);
+}
+
+.tooltip.dark,
+.tooltip.dark.blue,
+.tooltip.dark.magenta,
+.tooltip.dark.green {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.30);
+}
