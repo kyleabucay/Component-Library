@@ -58,7 +58,7 @@
   margin: 0;
   font-size: 0.95rem;
   font-weight: 500;
-  transition: color 0.3s ease;
+  transition: color 0.15s ease;
   will-change: color;
 }
 
