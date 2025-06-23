@@ -209,3 +209,15 @@
 .tooltip.dark.green {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.30);
 }
+
+@media (max-width: 640px) {
+    .tooltip, 
+    .tooltip-content,
+    .tooltip-content h2,
+    .tooltip-content p,
+    .tooltip button,
+    .tooltip-arrow,
+    .icon-transition {
+        transition: all 0.3s ease;
+    }
+}
