@@ -67,13 +67,6 @@
   flex: 1;
 }
 
-.tooltip-content h2 {
-  margin: 0;
-  font-size: 0.95rem;
-  font-weight: 500;
-  will-change: color;
-}
-
 .tooltip-content p {
   margin-top: 5px;
   font-size: 0.95rem;
