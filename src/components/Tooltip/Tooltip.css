@@ -44,10 +44,9 @@
   position: relative;
   gap: 0.75rem;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
 }
 
-.tooltip, 
-.tooltip-content,
 .tooltip-content p,
 .tooltip button,
 .tooltip-arrow,
@@ -60,11 +59,13 @@
   font-size: 0.95rem;
   font-weight: 500;
   transition: color 0.3s ease;
+  will-change: color;
 }
 
 .tooltip-content {
   z-index: 2;
   flex: 1;
+  transition: none;
 }
 
 .tooltip-content p {
@@ -206,4 +207,19 @@
 .tooltip.dark.magenta,
 .tooltip.dark.green {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.30);
+}
+
+@media (max-width: 640px) {
+  .tooltip {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+  }
+  .tooltip-content {
+    transition: none;
+  }
+  .tooltip-content p,
+  .tooltip button,
+  .tooltip-arrow,
+  .icon-transition {
+    transition: all 0.3s ease;
+  }
 }
